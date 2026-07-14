@@ -12,3 +12,7 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice())
+
+function getHumanChoice() {
+	return deal = prompt("Rock, paper, scissors...!")
+}
