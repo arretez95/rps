@@ -21,45 +21,35 @@ function playRound(humanChoice, computerChoice) {
 	switch (player) {
 		case "rock":
 			if (computerChoice === "rock") {
-				"It's a draw!"
+				console.log("It's a draw!")
 			} else if (computerChoice === "paper") {
 				computerScore++
-				`You lose!
-				Your score: ${humanScore}
-				Computer score: ${computerScore}`
+				console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
 			} else if (computerChoice === "scissors") {
 				humanScore++
-				`You win!
+				console.log(`You win!
 				Your score: ${humanScore}
-				Computer score: ${computerScore}`
+				Computer score: ${computerScore}`)
 			}
 			break
 		case "paper":
 			if (computerChoice === "rock") {
 				humanScore++
-				console.log(`You win!
-				Your score: ${humanScore}
-				Computer score: ${computerScore}`)
+				console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
 			} else if (computerChoice === "paper") {
 				console.log("It's a draw!")
 			} else if (computerChoice === "scissors") {
 				computerScore++
-				console.log(`You lose!
-				Your score: ${humanScore}
-				Computer score: ${computerScore}`)
+				console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
 			}
 			break
 		case "scissors":
 			if (computerChoice === "rock") {
 				computerScore++
-				console.log(`You lose!
-				Your score: ${humanScore}
-				Computer score: ${computerScore}`)
+				console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
 			} else if (computerChoice === "paper") {
 				humanScore++
-				console.log(`You win!
-				Your score: ${humanScore}
-				Computer score: ${computerScore}`)
+				console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
 			} else if (computerChoice === "scissors") {
 				console.log("It's a draw!")
 			}
