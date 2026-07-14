@@ -16,3 +16,6 @@ console.log(getComputerChoice())
 function getHumanChoice() {
 	return deal = prompt("Rock, paper, scissors...!")
 }
+
+let humanScore
+let computerScore
