@@ -17,5 +17,24 @@ function getHumanChoice() {
 	return deal = prompt("Rock, paper, scissors...!")
 }
 
-let humanScore
-let computerScore
+let humanScore = 0
+let computerScore = 0
+
+function playRound(humanChoice, computerChoice) {
+	switch (humanChoice) {
+		case "rock":
+			if (computerChoice === "rock") {
+				"It's a draw!"
+			} else if (computerChoice === "paper") {
+				computerScore++
+				`You lose!
+				Your score: ${humanScore}
+				Computer score: ${computerScore}`
+			} else if (computerChoice === "scissors") {
+				humanScore++
+				`You win!
+				Your score: ${humanScore}
+				Computer score: ${computerScore}`
+			}
+	}
+}
