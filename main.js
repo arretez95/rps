@@ -49,7 +49,8 @@ function playRound(humanChoice, computerChoice) {
 				console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
 			} else if (computerChoice === "paper") {
 				humanScore++
-				console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
+				console.log(`You win! Your score: ${humanScore} | 
+				Computer score: ${computerScore}`)
 			} else if (computerChoice === "scissors") {
 				console.log("It's a draw!")
 			}
@@ -60,4 +61,8 @@ function playRound(humanChoice, computerChoice) {
 const humanSelection = getHumanChoice()
 const computerSelection = getComputerChoice()
 
-playRound(humanSelection, computerSelection)
+/* playRound(humanSelection, computerSelection) */
+
+function playGame() {
+	
+}
