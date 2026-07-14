@@ -1,3 +1,7 @@
+
+let humanScore = 0
+let computerScore = 0
+
 function playGame(num) {
 	for (let i = 0; i < num; i++) {
 	function getComputerChoice() {
@@ -15,9 +19,6 @@ function playGame(num) {
 		return deal = prompt("Rock, paper, scissors...!")
 	}
 	
-	let humanScore = 0
-	let computerScore = 0
-	
 	function playRound(humanChoice, computerChoice) {
 		let player = humanChoice.toLowerCase()
 		switch (player) {
@@ -29,9 +30,7 @@ function playGame(num) {
 				console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
 			} else if (computerChoice === "scissors") {
 				humanScore++
-				console.log(`You win!
-					Your score: ${humanScore}
-					Computer score: ${computerScore}`)
+				console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
 				}
 				break
 				case "paper":
