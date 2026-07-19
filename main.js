@@ -65,4 +65,9 @@ function playGame(num) {
 		}
 }
 
-playGame(5)
+document.addEventListener("click", (e) => {
+    if (e.target.id === "rock") {
+
+    }
+}
+)
