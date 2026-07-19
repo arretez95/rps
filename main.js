@@ -23,36 +23,36 @@ function playRound(humanChoice, computerChoice) {
                 divResult.textContent = "It's a draw!"
             } else if (computerChoice === "paper") {
                 computerScore++
-                divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
+                divResult.textContent = "You lose!" 
             } else if (computerChoice === "scissors") {
                 humanScore++
-                divResult.textContent = `You win! Your score: ${humanScore} | Computer score: ${computerScore}`
+                divResult.textContent = "You win!"
             }
             break
         case "paper":
             if (computerChoice === "rock") {
                 humanScore++
-                divResult.textContent = `You win! Your score: ${humanScore} | Computer score: ${computerScore}`
+                divResult.textContent = "You win!" 
             } else if (computerChoice === "paper") {
                 divResult.textContent = "It's a draw!"
             } else if (computerChoice === "scissors") {
                 computerScore++
-                divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
+                divResult.textContent = "You lose!"
             }
             break
         case "scissors":
             if (computerChoice === "rock") {
                 computerScore++
-                divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
+                divResult.textContent = "You lose!"
             } else if (computerChoice === "paper") {
                 humanScore++
-                console.log(`You win! Your score: ${humanScore} | 
-                        Computer score: ${computerScore}`)
+                divresult.textContent = "You win!"
             } else if (computerChoice === "scissors") {
                 divResult.textContent = "It's a draw!"
             }
             break
     }
+    divScore.textContent = `Your score: ${humanScore} | Computer score: ${computerScore}`
 }
     
     
