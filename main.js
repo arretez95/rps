@@ -23,7 +23,7 @@ function playRound(humanChoice, computerChoice) {
             divResult.textContent = "It's a draw!"
         } else if (computerChoice === "paper") {
             computerScore++
-            console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
+            divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
         } else if (computerChoice === "scissors") {
             humanScore++
             console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
@@ -37,13 +37,13 @@ function playRound(humanChoice, computerChoice) {
             divResult.textContent = "It's a draw!"
         } else if (computerChoice === "scissors") {
             computerScore++
-            console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
+            divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
         }
         break
         case "scissors":
         if (computerChoice === "rock") {
             computerScore++
-            console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
+            divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
         } else if (computerChoice === "paper") {
             humanScore++
             console.log(`You win! Your score: ${humanScore} | 
