@@ -1,6 +1,8 @@
-
 let humanScore = 0
 let computerScore = 0
+
+let divScore = document.querySelector("#score")
+let divResult = document.querySelector("#result")
 
 function getComputerChoice() {
     let random = Math.floor(Math.random() * 3)
@@ -13,16 +15,12 @@ function getComputerChoice() {
     }
 }
 
-/* function getHumanChoice() {
-return deal = prompt("Rock, paper, scissors...!")
-} */
-
 function playRound(humanChoice, computerChoice) {
     let player = humanChoice.toLowerCase()
     switch (player) {
         case "rock":
         if (computerChoice === "rock") {
-            console.log("It's a draw!")
+            divResult.textContent = "It's a draw!"
         } else if (computerChoice === "paper") {
             computerScore++
             console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
@@ -36,7 +34,7 @@ function playRound(humanChoice, computerChoice) {
             humanScore++
             console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
         } else if (computerChoice === "paper") {
-            console.log("It's a draw!")
+            divResult.textContent = "It's a draw!"
         } else if (computerChoice === "scissors") {
             computerScore++
             console.log(`You lose! Your score: ${humanScore} | Computer score: ${computerScore}`)
@@ -51,14 +49,11 @@ function playRound(humanChoice, computerChoice) {
             console.log(`You win! Your score: ${humanScore} | 
 					Computer score: ${computerScore}`)
         } else if (computerChoice === "scissors") {
-            console.log("It's a draw!")
+            divResult.textContent = "It's a draw!"
         }
         break
     }
 }
-
-    
-    
     
     
     
