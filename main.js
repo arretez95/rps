@@ -19,39 +19,39 @@ function playRound(humanChoice, computerChoice) {
     let player = humanChoice.toLowerCase()
     switch (player) {
         case "rock":
-        if (computerChoice === "rock") {
-            divResult.textContent = "It's a draw!"
-        } else if (computerChoice === "paper") {
-            computerScore++
-            divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
-        } else if (computerChoice === "scissors") {
-            humanScore++
-            console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
-        }
-        break
+            if (computerChoice === "rock") {
+                divResult.textContent = "It's a draw!"
+            } else if (computerChoice === "paper") {
+                computerScore++
+                divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
+            } else if (computerChoice === "scissors") {
+                humanScore++
+                divResult.textContent = `You win! Your score: ${humanScore} | Computer score: ${computerScore}`
+            }
+            break
         case "paper":
-        if (computerChoice === "rock") {
-            humanScore++
-            console.log(`You win! Your score: ${humanScore} | Computer score: ${computerScore}`)
-        } else if (computerChoice === "paper") {
-            divResult.textContent = "It's a draw!"
-        } else if (computerChoice === "scissors") {
-            computerScore++
-            divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
-        }
-        break
+            if (computerChoice === "rock") {
+                humanScore++
+                divResult.textContent = `You win! Your score: ${humanScore} | Computer score: ${computerScore}`
+            } else if (computerChoice === "paper") {
+                divResult.textContent = "It's a draw!"
+            } else if (computerChoice === "scissors") {
+                computerScore++
+                divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
+            }
+            break
         case "scissors":
-        if (computerChoice === "rock") {
-            computerScore++
-            divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
-        } else if (computerChoice === "paper") {
-            humanScore++
-            console.log(`You win! Your score: ${humanScore} | 
-					Computer score: ${computerScore}`)
-        } else if (computerChoice === "scissors") {
-            divResult.textContent = "It's a draw!"
-        }
-        break
+            if (computerChoice === "rock") {
+                computerScore++
+                divResult.textContent = `You lose! Your score: ${humanScore} | Computer score: ${computerScore}`
+            } else if (computerChoice === "paper") {
+                humanScore++
+                console.log(`You win! Your score: ${humanScore} | 
+                        Computer score: ${computerScore}`)
+            } else if (computerChoice === "scissors") {
+                divResult.textContent = "It's a draw!"
+            }
+            break
     }
 }
     
