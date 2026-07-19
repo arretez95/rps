@@ -52,7 +52,7 @@ function playRound(humanChoice, computerChoice) {
             }
             break
     }
-    divScore.textContent = `Your score: ${humanScore} | Computer score: ${computerScore}`
+    divScore.textContent = `You: ${humanScore} | Computer: ${computerScore}`
 }
     
     
