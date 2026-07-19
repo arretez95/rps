@@ -54,7 +54,7 @@ function playRound(humanChoice, computerChoice) {
             break
     }
     if (computerScore === 5 || humanScore === 5) {
-        divResult.textContent += computerScore > humanScore ? " Computer wins!" : " Player wins!"
+        divResult.textContent += computerScore > humanScore ? " Computer wins the game!" : " Player wins the game!"
     }
     divScore.textContent = `You: ${humanScore} | Computer: ${computerScore}`
 }
